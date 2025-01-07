@@ -1,0 +1,15 @@
+Structs : Use for group different datatypes as single datatype
+
+Signature :
+    struct Person{
+        string name,
+        uint8 age,
+        boolean isAbsent
+    }
+
+Initialization :
+    Person memory newUser = Person({
+        name:"Harshil",
+        age:34,
+        isAbsent:true
+    })

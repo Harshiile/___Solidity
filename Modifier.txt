@@ -1,0 +1,24 @@
+Require : Simplification of conditional statement
+        : Parameters =>     1. Condition
+                            2. Error Message
+
+Signature :
+    require(age<=10,"Below 10")  -> If error hits, it returns ( Not further code will be executed )
+
+
+______________________________________________________________________________________________________________________________
+  
+
+
+Modifier : Logic code runs before function is executing
+           i.e. => Condition checking before executing function
+
+i.e. :
+    modifier checkData(uint128 val){
+        require(val<100,"Bigger then 100");
+        _;  // _ define that, if Condition is true then function is executed which contain modifier
+    }
+
+    function addData(uint128 val) public checkData(val){
+        newUser.data.push(val);
+    }
