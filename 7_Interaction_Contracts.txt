@@ -1,0 +1,29 @@
+// Interaction between Contracts
+
+address(0) = 0x0000000000000000000000000000000000000000
+
+
+msg.sender : -> your_acc_address : If you directly interact with contract
+           : -> contractB_address : If contractB interact with contractA
+
+
+______________________________________________________________________________________________________________________________
+
+
+Let contractA & contractB : When contractB invoke function of contractA
+
+1. Make interface of contractA in contractB
+    interface IFirstOne {
+        function printData() external pure returns(string memory);
+    }
+
+2. Initialized the contractA_variable using interface   
+    contract SecondOne{
+        IFirstOne user;
+        constructor(address __FirstONe_address) { // address of contractA, given while deploying
+            user=IFirstOne(__FirstONe_address);
+        }
+        function accessContractAFunction() public view  returns(uint) {
+            return user.getValue(); // invoke function of contractA
+        }
+    }

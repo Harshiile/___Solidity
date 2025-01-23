@@ -1,0 +1,13 @@
+1. virtual : It allows functions/modifier in base contract to be overridden by derived contract
+
+
+2. abstract : The abstract contract meant for inheritance, we can't use this contract stand alone
+
+
+3. override : That indicate that current contract is overriding virtual function/modifier of base contract
+
+
+4. super : Instance of parent contract (use to invoke base contract functions/properties)
+
+
+5. pure : It indicates that function operates just based on input parameters & do not access/alter the blockchain state(like variables,balance etc...)
