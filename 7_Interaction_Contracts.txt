@@ -17,7 +17,7 @@ Let contractA & contractB : When contractB invoke function of contractA
         function printData() external pure returns(string memory);
     }
 
-2. Initialized the contractA_variable using interface   
+2. Initialized the contractA_variable just like an instance of contractA using interface   
     contract SecondOne{
         IFirstOne user;
         constructor(address __FirstONe_address) { // address of contractA, given while deploying
