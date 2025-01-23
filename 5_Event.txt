@@ -7,4 +7,4 @@ Events : Emitted from smart contracts which generelly used by frontend side
     i.e.
         1. event userAdded(uint128 indexed user_id,string memory username);
             // here "indexed", filter the data faster just like index in Database
-        2. emit userAdded(235687922,"Harshi");
+        2. emit userAdded(235687922,"Harshil");
