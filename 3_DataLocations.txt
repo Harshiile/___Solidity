@@ -1,0 +1,19 @@
+Data Locations
+    - memory
+    - calldata
+    - storage
+______________________________________________________________________________________________________________________________
+
+> memory & calldata is temporary data Locations 
+    - calldata : Only read-Only
+        i.e. : Use in function parameters which don't need to modify, they'll being use just for reading purpose
+
+    - memory : Read-Write access
+
+> storage stored on blockchain, retaining their values between function calls and transactions
+______________________________________________________________________________________________________________________________
+
+> If we declare primitive datatype
+    - Outside function (As State Variable) : default data location => storage 
+    - Inside function (As Local Variable) : default data location => memory
+    
