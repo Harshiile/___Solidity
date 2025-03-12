@@ -1,10 +1,15 @@
-Require : Simplification of conditional statement
-        : Parameters =>     1. Condition
-                            2. Error Message
+Require
+    - require(age<=10,"Below 10")  -> If error hits, it returns ( Not further code will be executed )
 
-Signature :
-    require(age<=10,"Below 10")  -> If error hits, it returns ( Not further code will be executed )
+Revert
+    - revert("Hello error occurs")
 
+Custom error
+    error MyError(string errMsg);
+    revert MyError("Hello error occurs")
+
+
+## More longer message, more gas consumed
 
 ______________________________________________________________________________________________________________________________
   
@@ -15,8 +20,9 @@ Modifier : Logic code runs before function is executing
 
 i.e. :
     modifier checkData(uint128 val){
-        require(val<100,"Bigger then 100");
+        // code -> this will executed before execution of "addData(val)" 
         _;  // _ define that, if Condition is true then function is executed which contain modifier
+        // code -> this will executed after "addData(val)" is executed
     }
 
     function addData(uint128 val) public checkData(val){

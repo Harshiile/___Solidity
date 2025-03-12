@@ -7,6 +7,13 @@ Variables
 ___________________________________________________________________________________________________________
 
 
+Constant State Variable
+    - constant keyword (state variable no need to modify)
+    - save gas when constant keyword is used
+    
+___________________________________________________________________________________________________________
+
+
 Functions
     Signature : functn_name -> parameters -> visibility -> return_type
         function add(unit8 a,uint8 b) public returns(uint8) {
