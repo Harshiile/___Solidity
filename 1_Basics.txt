@@ -10,14 +10,18 @@ ________________________________________________________________________________
 Constant State Variable
     - constant keyword (state variable no need to modify)
     - save gas when constant keyword is used
-    
+
 ___________________________________________________________________________________________________________
 
 
 Functions
     Signature : functn_name -> parameters -> visibility -> return_type
+
         function add(unit8 a,uint8 b) public returns(uint8) {
             return a+b;
+        }
+        function add(uint8 a,uint8 b) public returns(uint8 c){ // Another type to return o/p of function
+            c=a+b;
         }
 
     View Functions : They don't modify the state of the contract
@@ -42,7 +46,32 @@ Visibility
 ___________________________________________________________________________________________________________
 
 
+Destructring    
+    function getVal() pure internal returns(uint x,string memory y){
+        x=34;
+        y="Harshil";
+    }
+
+    (uint a,string memory b) = getVal();  // Destructring
+
+    (,string memory n) = getVal();  // Destructring
+
+    (uint q,) = getVal();  // Destructring
+
+___________________________________________________________________________________________________________
+
+
 Arrays 
     Signature :
         - uint8[] public arr; // Not fixed length, Dynamic length
         - uint8[10] private arr; // fixed length, all elements initialized to 0 
+
+        - uint8[] memory arr=new uint8[](5); 
+            - fixed length, but initialized in memory
+            - length is must, with memory initialized array (i.e. 5)
+            - push,pop not worked, only updation 
+    
+    i.e.
+        uint[] ar=[1,2,5,7];
+            - ar.push(8) => [1,2,5,7,4]
+            - delete ar[2] => [1,2,0,7,4]  // set with default value of datatype
