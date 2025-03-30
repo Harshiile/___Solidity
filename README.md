@@ -8,24 +8,24 @@
 ⚡ **Destructring**   
 ⚡ **Arrays**   
 
-## 2️⃣ Adv
+## Adv
 ⚡ **Structs**   
 ⚡ **Enums**   
 ⚡ **Mapping**   
 ⚡ **Inheritance**   
 ⚡ **Events**   
 
-## 3️⃣ Data Locations
+## Data Locations
 ⚡ **Memory**   
 ⚡ **Calldata**   
 ⚡ **Storage**   
 
-## 5️⃣ Modifier
+## Modifier
 ⚡ **Require, Revert, Alert**   
 ⚡ **Modifier**   
 ⚡ **Payable Modifier**  
 
-## 6️⃣ Keywords
+## Keywords
 ⚡ **Virtual**   
 ⚡ **Abstract**   
 ⚡ **Override**   
@@ -33,5 +33,5 @@
 ⚡ **Pure**   
 ⚡ **Immutable**
 
-## 7️⃣ Interaction
+## Interaction
 ⚡ **Interface**
