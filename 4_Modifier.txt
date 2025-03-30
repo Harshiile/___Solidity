@@ -28,3 +28,9 @@ i.e. :
     function addData(uint128 val) public checkData(val){
         newUser.data.push(val);
     }
+
+
+______________________________________________________________________________________________________________________________
+
+
+Payable : It's modifier which allow functions/address to receive ether 

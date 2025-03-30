@@ -11,3 +11,8 @@
 
 
 5. pure : It indicates that function operates just based on input parameters & do not access/alter the blockchain state(like variables,balance etc...)
+
+
+6. immutable : It uses for state variable which assign onces, so we can't modifiy the values
+             : Can't use with string,struct...
+             : Also, this uses lower gas than state varibale without immutable
